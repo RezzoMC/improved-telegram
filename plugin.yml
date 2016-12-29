@@ -1,0 +1,33 @@
+name: SellAll
+main: com.RezzoMC.SellAll.Main
+version: 1.0
+author: RezzoMC
+depend: [Vault]
+softdepend: [worldguard]
+description: SellAll signs!
+commands:
+   sellall:
+      description: SellAll command.
+      usage: /sellall
+      aliases: [sa]
+   autopickup:
+      description: Autopickup command.
+      usage: /autopickup
+      aliases: [ap]
+      permission: sellall.autopickup
+permissions:
+  sellall.create:
+    description: Access to create SellAll signs!
+    default: OP
+  sellall.use:
+    description: Access to use SellAll signs!
+    default: OP
+  sellall.autopickup:
+    description: Access to autopickup blocks!
+    default: OP
+  sellall.break:
+    description: Access to break SellAll signs!
+    default: OP
+  sellall.set:
+    description: Access to set SellAll multipliers!
+    default: OP
